@@ -1,4 +1,17 @@
 import { useState } from "react";
+import logoDocker from "./assets/logo-docker.svg";
+import logoExpress from "./assets/logo-express.svg";
+import logoGithub from "./assets/logo-github.svg";
+import logoMongodb from "./assets/logo-mongodb.svg";
+import logoNode from "./assets/logo-node.svg";
+import logoReact from "./assets/logo-react.svg";
+import logoRedux from "./assets/logo-redux.svg";
+import logoStorybook from "./assets/logo-storybook.svg";
+import logoTailwind from "./assets/logo-tailwind.svg";
+import logoTypescript from "./assets/logo-typescript.svg";
+import logoVite from "./assets/logo-vite.svg";
+
+import { BiEnvelope, BiLogoGithub, BiRocket } from "react-icons/bi";
 
 function App() {
   const [count, setCount] = useState(0);
@@ -6,7 +19,7 @@ function App() {
   return (
     <>
       <div className="flex justify-center">
-        <div className="flex flex-col p-10 gap-10 max-w-5xl">
+        <div className="flex flex-col p-10 gap-16 max-w-5xl">
           <h1 className="text-5xl font-semibold text-center">Hugo Martin</h1>
           <div className="flex flex-col gap-4 p-5 bg-gray-800 rounded-md">
             <p>
@@ -25,29 +38,51 @@ function App() {
             </a>
           </div>
           <div className="flex flex-col gap-4">
-            <h2>What I Do</h2>
+            <h2 className="mb-3">What I Do</h2>
+            <h3>✨ Craft Stunning Websites</h3>
             <p>
-              ✨ Craft Stunning Websites: From eye-catching designs to seamless
-              user experiences, I bring ideas to life with clean, responsive web
-              development.
+              From eye-catching designs to seamless user experiences, I bring
+              ideas to life with clean, responsive web development.
+            </p>
+            <h3>💻 Code Magic</h3>
+            <p>
+              JavaScript, Tailwind CSS, React.js, Node.js, MongoDB - you name
+              it! I thrive on turning lines of code into interactive wonders.
+            </p>
+            <h3>🚀 Optimize for Success</h3>
+            <p>
+              I don't just stop at making it work; I optimize for speed,
+              performance, and scalability to ensure your project runs like a
+              dream. Ready to see your project take flight? Let's create
+              something amazing together! Dive into my portfolio, check out my
+              work, and let's talk about how we can collaborate.
             </p>
             <p>
-              💻 Code Magic: JavaScript, Tailwind CSS, React.js, Node.js,
-              MongoDB - you name it! I thrive on turning lines of code into
-              interactive wonders.
-            </p>
-            <p>
-              🚀 Optimize for Success: I don't just stop at making it work; I
-              optimize for speed, performance, and scalability to ensure your
-              project runs like a dream. Ready to see your project take flight?
               Let's create something amazing together! Dive into my portfolio,
               check out my work, and let's talk about how we can collaborate.
             </p>
-            <p>
-              Ready to see your project take flight? Let's create something
-              amazing together! Dive into my portfolio, check out my work, and
-              let's talk about how we can collaborate.
-            </p>
+          </div>
+
+          <div className="flex flex-col gap-4 mb-5">
+            <h2>My Tech Stack</h2>
+            {/* Tech Logos */}
+            <div className="flex flex-wrap gap-x-4 gap-y-6 bg-gray-800 justify-between p-4 rounded-md">
+              <img className="h-8 w-auto" src={logoVite} alt="Vite" />
+              <img className="h-8 w-auto" src={logoReact} alt="React" />
+              <img className="h-8 w-auto" src={logoRedux} alt="Redux" />
+              <img className="h-7 w-auto" src={logoTailwind} alt="Tailwind" />
+              <img className="h-8 w-auto" src={logoStorybook} alt="Storybook" />
+              <img className="h-8 w-auto" src={logoNode} alt="Node" />
+              <img className="h-8 w-auto" src={logoExpress} alt="Express" />
+              <img className="h-8 w-auto" src={logoMongodb} alt="Mongodb" />
+              <img className="h-8 w-auto" src={logoGithub} alt="Github" />
+              <img
+                className="h-8 w-auto"
+                src={logoTypescript}
+                alt="Typescript"
+              />
+              <img className="h-8 w-auto" src={logoDocker} alt="Docker" />
+            </div>
           </div>
 
           {/* SEND A MESSAGE */}
@@ -61,8 +96,9 @@ function App() {
             </p>
             <a
               href="mailto:h.martin.dev@gmail.com"
-              className="font-semibold bg-blue-600 px-4 py-3 w-fit rounded-md text-sm"
+              className="font-semibold bg-indigo-600 px-4 py-3 w-fit rounded-md text-sm inline-flex gap-x-2"
             >
+              <BiEnvelope size={20} />
               Write me Something
             </a>
           </div>
@@ -79,10 +115,11 @@ function App() {
             </p>
             <a
               href="https://github.com/HgoMrtn/welcome"
-              className="font-semibold bg-blue-600 px-4 py-3 w-fit rounded-md text-sm"
+              className="font-semibold bg-indigo-600 px-4 py-3 w-fit rounded-md text-sm inline-flex gap-x-2"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
+              <BiLogoGithub size={20} />
               Open my GitHub Profile
             </a>
           </div>
@@ -99,10 +136,11 @@ function App() {
             </p>
             <a
               href="https://app.xolo.io/profile/hugomartin"
-              className="font-semibold bg-blue-600 px-4 py-3 w-fit rounded-md text-sm"
+              className="font-semibold bg-indigo-600 px-4 py-3 w-fit rounded-md text-sm inline-flex gap-x-2"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
+              <BiRocket size={20} />
               Open my Xolo Profile
             </a>
           </div>
