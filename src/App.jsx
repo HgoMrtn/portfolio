@@ -19,25 +19,30 @@ function App() {
 
   return (
     <>
-      <div className="flex justify-center">
-        <div className="flex flex-col p-10 gap-16 max-w-5xl">
-          <h1 className="text-5xl font-semibold text-center">Hugo Martin</h1>
-          <div className="flex flex-col gap-4 p-5 bg-gray-800 rounded-md">
-            <p>
-              Hey there! 👋 I'm Hugo, a passionate Full Stack MERN Developer on
-              a mission to turn ideas into beautifully functional websites and
-              applications. Whether you need a sleek user interface, a robust
-              backend, or anything in between, you're in the right place!
+      <div className="flex flex-col justify-center">
+        <div className="bg-indigo-600">
+          <div className="flex flex-col px-10 py-20 gap-7 max-w-5xl">
+            <p>Hi I'm Hugo Martin 👋</p>
+            <h1 className="md:text-8xl text-5xl font-bold">
+              Full Stack Web Developer
+            </h1>
+            <p className="max-w-3xl">
+              I'm on a mission to turn ideas into beautifully functional
+              websites and applications. Whether you need a sleek user
+              interface, a robust backend, or anything in between, you're in the
+              right place!
             </p>
             <a
               href="https://flowcv.com/resume/4svasiog8s"
-              className="font-semibold bg-gray-700 px-4 py-3 w-fit rounded-md text-sm"
+              className="font-semibold bg-white text-indigo-600 px-4 py-3 w-fit rounded-md hover:bg-indigo-100"
               target="_blank"
               rel="noopener noreferrer nofollow"
             >
               Download my Resume
             </a>
           </div>
+        </div>
+        <div className="flex flex-col p-10 gap-16 max-w-5xl">
           <div className="flex flex-col gap-4">
             <h2 className="mb-3">What I Do</h2>
             <h3>✨ Craft Stunning Websites</h3>
