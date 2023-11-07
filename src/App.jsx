@@ -6,10 +6,11 @@ import logoMongodb from "./assets/logo-mongodb.svg";
 import logoNode from "./assets/logo-node.svg";
 import logoReact from "./assets/logo-react.svg";
 import logoRedux from "./assets/logo-redux.svg";
-import logoStorybook from "./assets/logo-storybook.svg";
 import logoTailwind from "./assets/logo-tailwind.svg";
-import logoTypescript from "./assets/logo-typescript.svg";
 import logoVite from "./assets/logo-vite.svg";
+import logoNext from "./assets/logo-next.svg";
+import logoJavascript from "./assets/logo-javascript.svg";
+import logoHtmlcss from "./assets/logo-htmlcss.svg";
 
 import { BiEnvelope, BiLogoGithub, BiRocket } from "react-icons/bi";
 
@@ -64,24 +65,71 @@ function App() {
           </div>
 
           <div className="flex flex-col gap-4 mb-5">
-            <h2>My Tech Stack</h2>
+            <h2>My Skills</h2>
             {/* Tech Logos */}
-            <div className="flex flex-wrap gap-x-4 gap-y-6 bg-gray-800 justify-between p-4 rounded-md">
-              <img className="h-8 w-auto" src={logoVite} alt="Vite" />
-              <img className="h-8 w-auto" src={logoReact} alt="React" />
-              <img className="h-8 w-auto" src={logoRedux} alt="Redux" />
-              <img className="h-7 w-auto" src={logoTailwind} alt="Tailwind" />
-              <img className="h-8 w-auto" src={logoStorybook} alt="Storybook" />
-              <img className="h-8 w-auto" src={logoNode} alt="Node" />
-              <img className="h-8 w-auto" src={logoExpress} alt="Express" />
-              <img className="h-8 w-auto" src={logoMongodb} alt="Mongodb" />
-              <img className="h-8 w-auto" src={logoGithub} alt="Github" />
-              <img
-                className="h-8 w-auto"
-                src={logoTypescript}
-                alt="Typescript"
-              />
-              <img className="h-8 w-auto" src={logoDocker} alt="Docker" />
+            <div className="grid md:grid-cols-6 sm:grid-cols-3 grid-cols-2 gap-4">
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img
+                  className="h-8 w-auto"
+                  src={logoJavascript}
+                  alt="JavaScript"
+                />
+                <p>JavaScript</p>
+              </div>
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img
+                  className="h-8 w-auto"
+                  src={logoHtmlcss}
+                  alt="HTML and CSS"
+                />
+                <p>HTML/CSS</p>
+              </div>
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoReact} alt="React" />
+                <p>React</p>
+              </div>
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoVite} alt="Vite" />
+                <p>Vite</p>
+              </div>
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoNext} alt="Next.js" />
+                <p>Next.js</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-7 w-auto" src={logoTailwind} alt="Tailwind" />
+                <p>Tailwind</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoRedux} alt="Redux" />
+                <p>Redux</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoNode} alt="Node" />
+                <p>Node.js</p>
+              </div>
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoExpress} alt="Express" />
+                <p>Express.js</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoMongodb} alt="Mongodb" />
+                <p>MongoDB</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoGithub} alt="Github" />
+                <p>GitHub</p>
+              </div>
+
+              <div className="flex flex-col items-center gap-3 px-6 py-4 bg-gray-800 rounded-md">
+                <img className="h-8 w-auto" src={logoDocker} alt="Docker" />
+                <p>Docker</p>
+              </div>
             </div>
           </div>
 
