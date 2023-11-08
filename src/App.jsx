@@ -169,7 +169,7 @@ export default function App() {
             soon.
           </p>
           <a
-            href="https://github.com/HgoMrtn/welcome"
+            href="https://github.com/HgoMrtn"
             className="font-semibold bg-indigo-600 px-4 py-3 w-fit rounded-md text-sm inline-flex gap-x-2"
             target="_blank"
             rel="noopener noreferrer nofollow"
